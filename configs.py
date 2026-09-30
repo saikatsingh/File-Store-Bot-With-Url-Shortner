@@ -5,11 +5,11 @@
 import os
 
 class Config(object):
-  API_ID = int(os.environ.get("API_ID", ""))
-  API_HASH = os.environ.get("API_HASH", "")
+  API_ID = int(os.environ.get("API_ID", "22244082"))
+  API_HASH = os.environ.get("API_HASH", "fc90b0390b0130286c2676a19ed9c4da")
   BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
-  BOT_USERNAME = os.environ.get("BOT_USERNAME", "")
-  DB_CHANNEL = int(os.environ.get("DB_CHANNEL", ""))
+  BOT_USERNAME = os.environ.get("BOT_USERNAME", "Cron_House_Bot")
+  DB_CHANNEL = int(os.environ.get("DB_CHANNEL", "-1004420561870"))
   SHORTLINK_URL = os.environ.get('SHORTLINK_URL', "")
   SHORTLINK_API = os.environ.get('SHORTLINK_API', "")
   BOT_OWNER = int(os.environ.get("BOT_OWNER", ""))
