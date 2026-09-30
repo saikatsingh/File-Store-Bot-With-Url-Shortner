@@ -1,8 +1,13 @@
 # Don't Remove Credit Tg - @VJ_Bots
 # Subscribe YouTube Channel For Amazing Bot @Tech_VJ
 # Ask Doubt on telegram @KingVJ01
-
+import re
+from os import environ
 import os
+
+id_pattern = re.compile(r'^.\d+$')
+
+AUTH_CHANNEL = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('AUTH_CHANNEL', '').split()] # give channel id with seperate space. Ex : ('-10073828 -102782829 -1007282828')
 
 class Config(object):
   API_ID = int(os.environ.get("API_ID", ""))
